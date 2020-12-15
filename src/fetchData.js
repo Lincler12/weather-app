@@ -1,15 +1,17 @@
 import WeatherData from "./WeatherData";
 // api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
-async function fetchData(city, state, country) {
+async function fetchData(city) {
+  let Data;
   try {
     const response = await fetch(
-      `api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=868f093f0f773b1bdc7f546a82c01464`,
+      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=868f093f0f773b1bdc7f546a82c01464`,
       {
+        method: "GET",
         mode: "cors",
       }
     );
     const json = await response.json();
-    const Data = new WeatherData(
+    Data = new WeatherData(
       json.weather[0].description,
       json.weather[0].icon,
       json.name,
@@ -21,6 +23,10 @@ async function fetchData(city, state, country) {
       json.timezone
     );
   } catch (e) {
-    Promise.reject(new Error(e));
+		console.log(e);
+    // Promise.reject(new Error(e));
   }
+  return Data;
 }
+
+export default fetchData;
