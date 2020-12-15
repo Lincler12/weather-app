@@ -1,0 +1,42 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A simple weather app to learn the use of API",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Lincler12/weather-app.git"
+  },
+  "author": "Nikos Kalogeropoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lincler12/weather-app/issues"
+  },
+  "homepage": "https://github.com/Lincler12/weather-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-private-methods": "^7.12.1",
+    "@babel/preset-env": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1",
+    "webpack": "^5.10.2",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1"
+  }
+}
