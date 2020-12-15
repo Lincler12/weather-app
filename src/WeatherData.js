@@ -2,13 +2,13 @@
 class WeatherData {
   _descr;
 
+  _icon;
+
   _city;
 
   _country;
 
-  _Fahrenheit;
-
-  _Celsius;
+  _Kelvin;
 
   _feelsLike;
 
@@ -16,7 +16,7 @@ class WeatherData {
 
   _humidity;
 
-  _time;
+  _timezone;
 
   get time() {
     return this._time;
@@ -26,16 +26,26 @@ class WeatherData {
     this._time = value;
   }
 
-  constructor(descr, city, country, fahren, cels, feels, wind, humidity, time) {
+  constructor(
+    descr,
+    icon,
+    city,
+    country,
+    kelvin,
+    feels,
+    wind,
+    humidity,
+    timezone
+  ) {
     this._descr = descr;
+    this._icon = icon;
     this._city = city;
     this._country = country;
-    this._Fahrenheit = fahren;
-    this._Celsius = cels;
+    this._Kelvin = kelvin;
     this._feelsLike = feels;
     this._wind = wind;
     this._humidity = humidity;
-    this._time = time;
+    this._timezone = timezone;
   }
 }
 

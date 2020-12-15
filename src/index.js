@@ -1,0 +1,1 @@
+import weatherData from "./WeatherData";
