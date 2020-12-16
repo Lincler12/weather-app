@@ -23,8 +23,7 @@ async function fetchData(city) {
       json.timezone
     );
   } catch (e) {
-		console.log(e);
-    // Promise.reject(new Error(e));
+    return Promise.reject(new Error(e));
   }
   return Data;
 }

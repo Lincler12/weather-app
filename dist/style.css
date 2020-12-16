@@ -16,14 +16,25 @@ body {
 }
 
 main {
-  max-width: 30rem;
+  max-width: 50rem;
+
   padding: 10px;
-  margin-top: 20px auto 0 auto;
+  margin: 20px auto 0 auto;
   border-radius: 40px;
   text-align: center;
   color: white;
   background: linear-gradient(145deg, #478aff, #3b74d6);
   animation: appearFromNone 2s ease-in forwards;
+}
+
+#header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header h1{
+  margin-left: 20px;
+  font-weight: 600;
 }
 
 @keyframes appearFromNone {
@@ -36,4 +47,37 @@ main {
 }
 
 input[type="text"] {
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
+
+#location{
+  font-size: xx-large;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#temp-id{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+
+#temp-id #temperature{
+  margin-left: 20px;
+}
+#temp-id img{
+  margin-left: 20px;
+}
+
+.error-message-off{
+  display: none;
 }
