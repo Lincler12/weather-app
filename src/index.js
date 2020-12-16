@@ -44,3 +44,20 @@ form.addEventListener("submit", (e) => {
       }
     });
 });
+
+fetchData("Athens").then((resolve) => {
+  const weatherData = resolve;
+  populate(
+    weatherData.descr,
+    weatherData.getIconUrl(),
+    weatherData.city,
+    weatherData.country,
+    weatherData.Celsius,
+    weatherData.feelsLikeCelsius,
+    weatherData.wind,
+    weatherData.humidity,
+    weatherData.time,
+    weatherData.Celsius,
+    weatherData.feelsLikeCelsius
+  );
+});
