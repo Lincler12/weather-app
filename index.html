@@ -8,10 +8,19 @@
   </head>
   <body>
     <main>
-      <h2>Current Weather</h2>
+      <div id = "header">
+        <img src="https://www.feirox.com/rivu/2016/04/Klara-1-1.png" width="50px" height="50px" alt="">
+        <h1>Current Weather</h1>
+      </div>
       <form action="">
-        <input type="text" />
+        <input type="text" placeholder="City..."/>
+        <p id = "error-message" class = "error-message-off">Oops! Location not found, try another!</p>
       </form>
+        <p id = "location"><span id = "city"></span>, <span id = "country"></span></p>
+        <p id = "temp-id"><span id = "temperature"></span><span>&#8451;</span><img src=""  id = "weather-img" alt=""></p>
+      <div>
+        <p>Feels Like: <span id = "feels-like"></span> <span>&#8451;</span>| Wind: <span id = "wind"></span> | Humidity <span id = "humidity"></span></p>
+      </div>
     </main>
 
     <script src="bundle.js"></script>
